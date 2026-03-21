@@ -1,12 +1,14 @@
 Contributing
 ============
 
-We welcome and encourage contributions to the ChatterBot Corpus! This project relies on community contributions to provide high-quality, diverse training data for chatbots across multiple languages.
+We welcome and encourage contributions to the ChatterBot Corpus!
+This project relies on community contributions to provide high-quality,
+diverse training data for chatbots across multiple languages.
 
 For complete contributing guidelines, please see the `CONTRIBUTING.md <https://github.com/gunthercox/chatterbot-corpus/blob/master/CONTRIBUTING.md>`_ file in the repository.
 
 Content Quality Standards
---------------------------
+-------------------------
 
 The corpus aims for:
 
@@ -34,7 +36,7 @@ Contributions must:
 * Be appropriate for public distribution
 
 Quick Start for Contributors
------------------------------
+----------------------------
 
 1. **Fork the repository** on GitHub
 2. **Create a new branch** for your contribution
@@ -72,7 +74,7 @@ To add support for a new language:
 4. Ensure translations are accurate and culturally appropriate
 
 Improving Existing Content
----------------------------
+--------------------------
 
 You can help by:
 
@@ -106,3 +108,37 @@ If you have questions about contributing:
 3. `Open a new issue <https://github.com/gunthercox/chatterbot-corpus/issues/new>`_ with your question if you can't find an answer
 
 Thank you for helping make ChatterBot better for everyone!
+
+Development and Testing
+-----------------------
+
+Make sure to have all dependencies installed before running the tests.
+
+.. code-block:: bash
+
+   pip install -r .[test]
+
+Tests can be run locally using `unittest`. To run the tests, navigate to the root directory of the repository and execute:
+
+.. code-block:: bash
+
+   python -m unittest discover -s tests
+
+This will run all the test cases defined in the `tests` directory.
+
+You can also run specific test files or test cases by providing the path to the test file or the test case name. For example:
+
+.. code-block:: bash
+
+   python -m unittest tests.test_corpus.CorpusTestCase.test_load_corpus
+
+This will run only the `test_load_corpus` test case from the `CorpusTestCase` class in the `test_corpus.py` file.
+
+To test building the project documentation, you can use the following command:
+
+.. code-block:: bash
+
+   python -m sphinx -b html docs/ html
+
+This will build the HTML documentation from the source files in the `docs` directory and output it to the `html` directory.
+You can then open the generated HTML files in a web browser to review the documentation.
