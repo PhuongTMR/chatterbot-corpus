@@ -12,7 +12,7 @@ version = {attr = "chatterbot_corpus.__version__"}
 
 [project]
 name = "chatterbot-corpus"
-requires-python = ">=3.9,<4.0"
+requires-python = ">=3.10,<4.0"
 urls = { Documentation = "https://corpu.chatterbot.us", Repository = "https://github.com/gunthercox/chatterbot-corpus" }
 authors = [
   {name = "Gunther Cox"},
@@ -39,7 +39,7 @@ classifiers = [
     "Topic :: Internet",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3",
-    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
 ]
 
 [project.optional-dependencies]

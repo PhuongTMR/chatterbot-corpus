@@ -4,7 +4,7 @@ Installation
 Requirements
 ------------
 
-- Python 3.9 or newer
+- Python 3.10 or newer
 - `PyYAML <https://pyyaml.org/>`_ (installed automatically as a dependency)
 
 Install from PyPI
